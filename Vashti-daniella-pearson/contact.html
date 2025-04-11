@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - DI BTEC PROJECT</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+
+    <header>
+        <div class="contain">
+      <div class="logo"><a href="#">DI BTEC PROJECT</a></div>
+        <nav class="nav">    
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="culture.html">Culture</a></li>
+                <li><a href="challenges.html">Challenges</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+
+            </ul>
+        </nav>
+         <!-- Mobile Menu Toggle (Hamburger Icon) -->
+         <button class="nav-toggle" aria-label="Toggle Navigation">
+            <span class="hamburger"></span>
+        </button>
+    </header>
+    <section id="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content animate__animated animate__fadeInLeft">
+                <h2>Let's Plan Your Adventure!</h2>
+                <p>We're here to answer your questions and help you create the perfect travel experience.  Get in touch with us today.</p>
+                <a href="#contact-form-section" class="button">Get in Touch</a>
+            </div>
+            <div class="contact-hero-image animate__animated animate__fadeInRight">
+                <img src="cult.img/images (2).jpg" alt="Beautiful Destination">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-form-section">
+        <div class="containe">
+            <div class="contact-info animate__animated animate__fadeInUp">
+                <h3>Contact Information</h3>
+                <p><i class="fas fa-map-marker-alt"></i> P. O. Box 4386, Accra</p>
+                <p><i class="fas fa-phone"></i> +233 25 603 2996</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:[Your Email Address]">info@motac.gov.gh</a></p>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-form animate__animated animate__fadeInUp">
+                <h3></h3>
+                 <!-- <form id="contactForm" action="process_form.php" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="button">Send Message</button>
+                    <p id="form-message"></p> 
+                </form>
+            </div> -->
+            <div class="login">
+                <div class="form">
+                    <h5>Send Us a Message</h5>
+                    <form id="contactForm" action="process_form.php" method="post">
+                        <div class="box">
+                    <span class="icon"><ion-icon name="fname"></ion-icon></span>
+                    <input type="fname" required>
+                    <label for="">Name</label>
+                        </div>
+                        <div class="box">
+                            <span class="icon"><ion-icon name="email"></ion-icon></span>
+                            <input type="mail" required>
+                            <label for="">Email</label>
+                                </div>
+                                <div class="box">
+                                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                                    <input type="password" required>
+                                    <label for="">Password</label>
+                                        </div>
+                                        <div clasbox">
+                                            <label for="message">Message:</label> <br><br>
+                                         <textarea  name="message" rows="5" required></textarea>
+                                        </div>
+                                        <button type="submit" class="button">Send Message</button>
+                                        <p id="form-message"></p> 
+
+                                <label for=""><input type="checkbox">Remember me</label>
+                                <a href="#">Forget Password?</a>
+                                
+                    </form>
+                </div>
+        </div>
+
+        
+    </section>
+
+   
+
+    
+    
+        
+        <main class="booking-page-main">
+            <div class="booking-container">
+    
+                <div class="booking-form-section">
+                    <h1>Book Your Ghanaian Experience</h1>
+                    <p class="subtitle">Secure your tour or accommodation today. Akwaaba!</p>
+    
+                    <form id="booking-form" action="/process-booking" method="POST"> <fieldset>
+                            <legend>1. Select Your Experience</legend>
+                            <div class="form-group">
+                                <label for="experience-type">Type</label>
+                                <select id="experience-type" name="experience_type" required>
+                                    <option value="" disabled selected>-- Choose Tour or Accommodation --</option>
+                                    <option value="tour_accra_city">Accra City Discovery Tour</option>
+                                    <option value="tour_cape_coast">Cape Coast & Elmina Heritage Tour</option>
+                                    <option value="tour_mole_safari">Mole National Park Safari (3 Days)</option>
+                                    <option value="hotel_labadi">Labadi Beach Hotel (Standard Room)</option>
+                                    <option value="guesthouse_kokrobite">Kokrobite Beach Guesthouse</option>
+                                    </select>
+                            </div>
+                        </fieldset>
+    
+                        <fieldset>
+                            <legend>2. Date & Participants</legend>
+                            <div class="form-row">
+                                <div class="form-group form-group-half">
+                                    <label for="booking-date">Select Date</label>
+                                    <input type="date" id="booking-date" name="booking_date" required min="2025-04-10"> <small>Check availability calendar (JS Feature)</small>
+                                </div>
+                                <div class="form-group form-group-half">
+                                    <label>Number of Participants</label>
+                                    <div class="quantity-selector">
+                                        <label for="adults">Adults:</label>
+                                        <button type="button" class="quantity-minus" aria-label="Decrease adults quantity">-</button>
+                                        <input type="number" id="adults" name="adults" value="1" min="1" max="10" readonly>
+                                        <button type="button" class="quantity-plus" aria-label="Increase adults quantity">+</button>
+                                    </div>
+                                    <div class="quantity-selector">
+                                        <label for="children">Children:</label>
+                                        <button type="button" class="quantity-minus" aria-label="Decrease children quantity">-</button>
+                                        <input type="number" id="children" name="children" value="0" min="0" max="5" readonly>
+                                        <button type="button" class="quantity-plus" aria-label="Increase children quantity">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="form-group">
+                                 <label for="special-requests">Special Requests (Optional)</label>
+                                 <textarea id="special-requests" name="special_requests" rows="3" placeholder="e.g., Dietary needs, accessibility requirements, preferred guide language"></textarea>
+                             </div>
+                        </fieldset>
+    
+                        <fieldset>
+                            <legend>3. Your Details</legend>
+                             <div class="form-row">
+                                <div class="form-group form-group-half">
+                                    <label for="full-name">Full Name</label>
+                                    <input type="text" id="full-name" name="full_name" required autocomplete="name">
+                                </div>
+                                <div class="form-group form-group-half">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" required autocomplete="email">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group form-group-half">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="+233 XX XXX XXXX">
+                                </div>
+                                 <div class="form-group form-group-half">
+                                    <label for="country">Country of Residence</label>
+                                    <input type="text" id="country" name="country" autocomplete="country-name">
+                                 </div>
+                             </div>
+                        </fieldset>
+    
+                        <fieldset>
+                            <legend>4. Payment Method</legend>
+                            <div class="payment-options">
+                                <label class="payment-option">
+                                    <input type="radio" name="payment_method" value="credit_card" required>
+                                    <img src="cult.img/images (2).png" alt="Credit Card Icon"> Credit/Debit Card
+                                </label>
+                                <label class="payment-option">
+                                    <input type="radio" name="payment_method" value="mobile_money">
+                                    <img src="cult.img/images.jpeg" alt="Mobile Money Icon"> Mobile Money (MTN, Voda, AirtelTigo)
+                                </label>
+                            </div>
+                            <div id="payment-details-placeholder" class="payment-details-area">
+                                <p>Secure payment area will load here based on selection.</p>
+                                </div>
+                             <div class="trust-signals">
+                                 <img src="images/icons/ssl-secure.svg" alt="SSL Secure Connection" height="25">
+                                 <span>Secure SSL Encrypted Payment</span>
+                             </div>
+                        </fieldset>
+    
+                        <div class="form-footer">
+                            <div class="form-group terms-agreement">
+                                <input type="checkbox" id="terms" name="terms_agreed" required>
+                                <label for="terms">I agree to the <a href="/terms-conditions" target="_blank">Terms and Conditions</a> and <a href="/cancellation-policy" target="_blank">Cancellation Policy</a>.</label>
+                            </div>
+                            <button type="submit" class="button-base button-primary submit-booking-btn">Proceed to Payment</button>
+                            <p class="secure-info">Your information is safe and secure.</p>
+                        </div>
+    
+                    </form>
+                </div>
+    
+                <aside class="booking-summary-section">
+                    <div class="summary-box">
+                        <h2>Booking Summary</h2>
+                        <div id="summary-experience" class="summary-item">
+                            <strong>Experience:</strong> <span>Please select an experience</span>
+                        </div>
+                        <div id="summary-date" class="summary-item">
+                            <strong>Date:</strong> <span>Select a date</span>
+                        </div>
+                        <div id="summary-participants" class="summary-item">
+                            <strong>Participants:</strong> <span id="participants-adults">1 Adult </span>, <span id="participants-children">Non-Ghanaian tertiary / Volunteers</span> <span id="participants-children">Non-Ghanaian JHS  with id  </span>
+                        </div>
+                        <hr>
+                        <div class="summary-pricing">
+                            <div class="price-item">
+                                <span>Non-Ghanaian tertiary student/Volunteers with ID </span>
+                                <span id="summary-base-price">GHS 60.00</span>
+                            </div>
+                            <div class="price-item">
+                                <span>Non-Ghanaian JHS  with id</span>
+                                <span id="summary-taxes">GHS 30.00</span>
+                            </div>
+                            <hr>
+                            <div class="price-item total-price">
+                                <span>Total Cost (GHS):</span>
+                                <strong id="summary-total-price">GHS 0.00</strong>
+                            </div>
+                             <div class="price-item usd-estimate">
+                                <span>(Approx. USD <span id="summary-usd-estimate">$0.00</span>)</span> </div>
+                        </div>
+                        <div class="summary-image">
+                            <img id="summary-experience-image" src="cult.img/images (4).jpg" alt="Selected Experience Image">
+                             <p>Image updates based on selection</p>
+                        </div>
+                        <div class="summary-help">
+                            <p>Need Help? <a href="contact.html">Contact Us</a> or call +233 XX XXX XXXX</p>
+                        </div>
+                    </div>
+                </aside>
+    
+            </div>
+        </main>
+    
+       
+
+
+
+   
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h3>DI BTEC PROJECT</h3>
+                </div>
+                <div class="footer-links">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">History</a></li>
+                        <li><a href="/tours">Culture</a></li>
+                        <li><a href="/destinations">Challenges</a></li>
+                        <li><a href="/blog">Gallery</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i>P. O. Box 4386, Accra</p>
+                    <p><i class="fas fa-phone"></i><a href="">+233 25 603 2996</a> </p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@motac.gov.gh">info@motac.gov.gh                    </a></p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Vashti Kumi. All rights reserved.</p>
+                <p>
+                    <a href="/terms">Terms of Service</a> |
+                    <a href="/privacy">Privacy Policy</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Get the elements
+const navToggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.nav');
+
+// Add event listener to the toggle button
+navToggle.addEventListener('click', () => {
+// Toggle the 'nav--visible' class on the navigation
+nav.classList.toggle('nav--visible');
+
+// Toggle the 'open' class on the toggle button for styling changes
+navToggle.classList.toggle('open');
+});
+    </script>
+</body>
+</html>
