@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sty.css">
+</head>
+<body>
+    <header>
+        <div class="contain">
+        
+            <a href="#" class="logo">
+                DI BTEC PROJECT
+            </a>
+
+            
+            <nav class="nav">
+                <ul >
+                    <li ><a href="index.html" >Home</a></li>
+                    <li><a href="history.html" >History</a></li>
+                    <li ><a href="culture.html">Culture</a></li>
+                    <li ><a href="challenges.html">Challenges</a></li>
+                    <li ><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+        
+            <button class="nav-toggle" aria-label="Toggle Navigation">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+        <div class="rate">
+            <h2>(TOURISM)</h2>
+            <h1>
+                Ghana Welcoming, authentic culture and beauty await exploration.
+                </h1>
+                <a href="main.html"><button>EXPLORE GHANA</button></a>
+        </div>
+        <div class="Ghana">
+            <img src="cult.img/ghana-1758953_640.webp" alt="">
+        </div>
+    </div>
+    </section>
+</body>
+<script>
+    // Get the elements
+const navToggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.nav');
+
+// Add event listener to the toggle button
+navToggle.addEventListener('click', () => {
+// Toggle the 'nav--visible' class on the navigation
+nav.classList.toggle('nav--visible');
+
+// Toggle the 'open' class on the toggle button for styling changes
+navToggle.classList.toggle('open');
+});
+</script>
+</html>

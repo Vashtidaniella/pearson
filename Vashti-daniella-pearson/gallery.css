@@ -1,0 +1,626 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient();
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+.contain {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+/* =========================
+ Header Styles
+ ========================= */
+header {
+  background-color: #000033;
+  color: #fff;
+  padding: 1rem 0;
+  border-bottom: 3px solid #e8491d;
+}
+
+header .contain {
+  display: flex; /* Use Flexbox for alignment */
+  align-items: center; /* Vertically center content */
+  justify-content: space-between; /* Space logo and nav evenly */
+}
+
+header .logo {
+  float: left; /* Still use float for older browser support */
+  font-weight: bold;
+  font-size: 1.5rem; /* Larger logo text */
+  color: #fff;
+  text-decoration: none;
+
+}
+header .logo img {
+  max-width: 150px;
+  height: auto;
+  vertical-align: middle; /* Align image with text */
+}
+
+/* Header and Navigation */
+/* header {
+    background-color: #000033;
+    color: #fff;
+    padding: 1em 0;
+    position: sticky; /* Stick the header to the top *
+    top: 0;
+    /* z-index: 100;    Ensure it stays above other content *
+} */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+
+/* .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out; /* Initial Fade-In Animation *
+} */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 0.5em 0.75em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+   position: relative;
+  }
+nav ul li a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: white;
+  border-radius: 5px;
+  left: 0;
+  bottom: -6px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .5s;
+}
+nav ul li a:hover::after{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+.seat{
+  height: 450px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.336)), url(cult.img/istockphoto-2148392430-612x612.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.sit{
+  color: rgba(255, 255, 255, 0.89);
+  font-size: 45px;
+  justify-content: right;
+  padding-top: 50px;
+  margin-left: 30px;
+}
+/* Gallery Section */
+.gallery{
+    background-color: white;
+    width: 90%;
+    margin-left: 60px;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+}
+.gallery h2{
+    text-align: center;
+    font-size: 50px;
+}
+.gallery-grid img {
+    width: 80%;
+    border-radius: 20px;
+    object-fit: cover;
+    height: 300px; /* Standard image height */
+    transition: transform 0.3s ease;
+    margin-top: 40px;
+    margin-left: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.712);
+}
+video{
+    border-radius: 10%;
+    overflow: hidden;
+box-shadow: 0 0 30px #000033;
+
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.1); /* Zoom on hover */
+}
+.trick h2{
+    text-align: center;
+    margin-top: 70px;
+    font-size: 50px;
+    }
+    .rate{
+        display: inline-flex;
+        border-radius: 30%;
+    }
+    .r video {
+        width: 600px;
+        height: 400px;
+        margin-left: 10px;
+    }
+    
+    
+    .water{
+      margin-left: 10px;
+        margin-right: 100px;
+        color: white;
+    }
+    
+    .beach video{
+        width: 600px;
+        height: 400px;
+        margin-left: 10px;
+    }
+    .trip{
+      margin-left: 10px;
+     margin-right: 100px;
+        color: white;
+    }
+    .trap{
+      margin-right: 30px;
+          margin-left: 100px;
+        color: white;
+    }
+    @media screen and(max-width:400px) {
+      body{
+          display:grid;
+       grid-template-areas: 'header'
+       'nav' 
+       'section'
+       'footer'
+       ;
+       
+      }
+      header{
+          grid-area: header;
+          width: 50%;
+      }
+      nav{
+          grid-area: nav;
+          width: 50%;
+      }
+      section{
+          grid-area: section;
+          width: 50%;
+          display: flex;
+          flex-direction: row;
+      }
+    }  
+    @media (max-width: 786px) {
+      nav {
+          flex-direction: column;
+          align-items: flex-start;
+      }
+  
+      nav ul {
+          margin-top: 0.5em;
+          flex-direction: column;
+      }
+  
+      nav ul li {
+          margin-left: 0;
+          margin-bottom: 0.5em;
+      }
+  
+      .hero h1 {
+          font-size: 2.5em;
+      }
+  
+      .challenges-grid {
+          grid-template-columns: 1fr;
+      }
+  } 
+  .grow{
+      margin-top: 50px;
+      color: white;
+      padding: px;
+      text-align: center;
+    }
+    
+    .grow-container {
+               /* Use flexbox for layout */
+      flex-direction: row;     /* Items in a row (side by side) */
+      justify-content: space-around; /* Distribute items evenly */
+      align-items: center;       /* Vertically center items */
+      max-width: 1200px;        /* Optional: Limit the width */
+      margin: 0 auto;         /* Center the container horizontally */
+    }
+    
+    .grow-map {
+      width: 50%;              /* Adjust width as needed */
+    }
+    
+    .grow-content {
+      width: 100%;              /* Adjust width as needed */
+      text-align: center;
+    }
+    
+    /* Responsive adjustments (optional) */
+    @media (max-width: 768px) {
+      .grow-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center;
+      }
+    
+      .grow-map {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    
+      .grow-content {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+     
+      padding: 0 20px;
+  }
+  
+
+/* Footer Styles */
+footer {
+    background-color: #000033; /* Dark background */
+    color: #fff;
+    padding: 40px 0;
+    font-size: 0.9em; /* Slightly smaller font for the footer */
+  }
+  
+  footer .container {
+    width: 80%; /* Match container width from other sections */
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .footer-logo h3{
+    margin-top: 70px;
+    width: 220px; /* Adjust logo size */
+  }
+  
+  
+  .footer-links h3,
+  .footer-contact h3,
+  .footer-social h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #fff;
+   
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links a {
+    color: #ccc; /* Lighter color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: green;
+  }
+  
+  .footer-contact p {
+    margin-bottom: 8px;
+  }
+  
+  .footer-contact i {
+    margin-right: px;
+    color: #fff;
+  }
+  
+  .footer-contact a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .footer-contact a:hover{
+    color: #008000;
+  }
+  
+  .footer-social a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.5em;
+    color: #ccc;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-social a:hover {
+    color: green;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #555; /* Subtle separator line */
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  .footer-bottom a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-bottom a:hover {
+    color: #fff;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+  
+    .footer-links,
+    .footer-contact,
+    .footer-social {
+        margin-bottom: 30px;
+    }
+  
+    .footer-social a {
+        margin: 0 10px;
+    }
+  
+    .footer-bottom {
+        text-align: center;
+    }
+  
+    .footer-bottom p {
+        margin-bottom: 5px;
+    }
+  
+    .footer-bottom a {
+        display: block;
+        margin: 5px auto;
+    }
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+  
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    header nav {
+        margin-top: 10px;
+    }
+  
+    header nav a {
+        margin: 0 10px;
+    }
+  
+    #contact-hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    #contact-hero .contact-hero-content,
+    #contact-hero .contact-hero-image {
+        width: 100%;
+    }
+  
+    #contact-hero .contact-hero-image {
+        margin-top: 20px;
+    }
+  
+    #contact-form-section .container {
+        grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Animations */
+  .animate__animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  }
+
+
+  /* =========================
+   Mobile Menu Toggle
+   ========================= */
+   .nav-toggle {
+    display: none; /* Hidden by default */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    float: right;
+    padding: 0;
+    margin-top: 10px; /* Align vertically with logo on desktop */
+}
+
+.nav-toggle:focus {
+    outline: none; /* Remove default focus outline */
+}
+
+.hamburger {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    top: 8px;
+}
+
+/* Style the icon when menu is open */
+.nav-toggle.open .hamburger {
+    background-color: transparent; /* Hide the middle line */
+}
+
+.nav-toggle.open .hamburger::before {
+    transform: translateY(8px) rotate(45deg); /* Rotate top line */
+}
+
+.nav-toggle.open .hamburger::after {
+    transform: translateY(-8px) rotate(-45deg); /* Rotate bottom line */
+}
+
+/* =========================
+   Mobile Navigation Styles (Hidden by Default)
+   ========================= */
+.nav.nav--visible { /* The menu is visible with Javascript */
+    display: block;
+    position: absolute;
+    top: 100%; /* Below the header */
+    left: 0;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.95); /* Dark with transparency */
+    z-index: 10; /* Ensure it's above content */
+    padding: 1rem 0; /* Add some padding */
+}
+
+.nav.nav--visible ul {
+    display: block; /* Stack items vertically */
+    text-align: center;
+    padding: 0;
+}
+
+.nav.nav--visible li {
+    padding: 0.75rem 0;
+}
+
+.nav.nav--visible a{
+    font-size: 1.1rem;
+    display: block; /* Make links fill the container for easier tapping */
+    padding: 0.5rem; /* Add padding around the links */
+}
+
+/* =========================
+   Hero Section Styles
+   ========================= */
+#hero {
+    background-color: #eee;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+/* =========================
+   Responsive Design (Media Queries)
+   ========================= */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    /* Mobile View: Adjust Header Layout */
+    header .container {
+        flex-direction: column; /* Stack logo and nav */
+        align-items: flex-start; /* Align to the left */
+    }
+
+    header .logo {
+        float: none; /* Remove float */
+        text-align: left; /* Align to the left */
+    }
+
+    /* Mobile View: Hide Desktop Navigation */
+    .nav {
+        display: none;
+        float: none; /* Remove float */
+        width: 100%; /* Take full width */
+    }
+
+    /* Mobile View: Show Mobile Menu Toggle */
+    .nav-toggle {
+        display: block;
+    }
+
+    /*Style Nav link item*/
+    li {
+      border-bottom: 1px solid gray;
+    }
+
+    .nav.nav--visible li:last-child {
+        border-bottom: none;
+    }
+
+    /* Mobile View: Position Header and Navigation */
+    header {
+      position: relative;
+    }
+
+}
